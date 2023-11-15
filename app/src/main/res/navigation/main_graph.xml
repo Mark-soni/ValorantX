@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.valorantx.kt.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" />
+    <fragment
+        android:id="@+id/agentesFragment"
+        android:name="com.example.valorantx.kt.AgentesFragment"
+        android:label="fragment_agentes"
+        tools:layout="@layout/fragment_agentes" />
+    <fragment
+        android:id="@+id/armasFragment"
+        android:name="com.example.valorantx.kt.ArmasFragment"
+        android:label="fragment_armas"
+        tools:layout="@layout/fragment_armas" />
+    <fragment
+        android:id="@+id/mapasFragment"
+        android:name="com.example.valorantx.kt.MapasFragment"
+        android:label="fragment_mapas"
+        tools:layout="@layout/fragment_mapas" />
+</navigation>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".kt.MainFragment">
+
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="150dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/img_notasparche"
+
+        android:scaleType="centerCrop" />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:text="Parche 1.7"
+        android:gravity="left"
+        android:layout_marginRight="10dp"
+        android:textSize="40sp"
+        android:layout_marginTop="20dp"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/img_noticia"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_alignParentTop="true">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:text="Noticias"
+                android:gravity="left"
+                android:layout_marginLeft="15dp"
+                android:textSize="50sp"
+                android:layout_marginTop="20dp"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/baseline_search_24"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn_txt"
+                app:tint="#FFFF" />
+        </LinearLayout>
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:rowCount="1"
+            android:layout_gravity="center">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nuevo"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/btn_txt"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agente"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/btn_txt"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mapas"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/btn_txt"
+                />
+        </GridLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

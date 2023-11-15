@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Valorant</string>
+
+    <string name="str_valorant">Valorant</string>
+    <string name="str_armas">Armas</string>
+    <string name="str_agentes">Agentes</string>
+    <string name="str_map">Map</string>
+    <string name="str_descripcion">Descripción</string>
+    <string name="str_perfil">Perfil</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

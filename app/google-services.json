@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "222674947491",
+    "project_id": "valorantx-51dd7",
+    "storage_bucket": "valorantx-51dd7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:222674947491:android:0631ff47cf5298bb901e16",
+        "android_client_info": {
+          "package_name": "com.example.valorantx"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0aQjIHWt1tuVJnww5myM9gdAr2jqnhns"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
