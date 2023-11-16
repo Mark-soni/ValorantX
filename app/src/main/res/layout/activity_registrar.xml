@@ -28,7 +28,7 @@
             android:src="@drawable/logovalorant"></ImageView>
 
 
-        <EditText
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txtCorreo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -43,7 +43,7 @@
             android:padding="10dp"
             android:textColorHint="@color/white" />
 
-        <EditText
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txtCrearContraseña"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -56,7 +56,22 @@
             android:inputType="textPassword"
             android:hint="Crear contraseña"
             android:padding="10dp"
-            android:textColorHint="@color/white"></EditText>
+            android:textColorHint="@color/white"></com.google.android.material.textfield.TextInputEditText>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtConfirmar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_input"
+            android:gravity="center"
+            android:inputType="textPassword"
+            android:hint="Confirmar contraseña"
+            android:padding="10dp"
+            android:textColorHint="@color/white"></com.google.android.material.textfield.TextInputEditText>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnCrear"

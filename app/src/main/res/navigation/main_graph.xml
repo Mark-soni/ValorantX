@@ -25,4 +25,9 @@
         android:name="com.example.valorantx.kt.MapasFragment"
         android:label="fragment_mapas"
         tools:layout="@layout/fragment_mapas" />
+    <activity
+        android:id="@+id/sesionActivity"
+        android:name="com.example.valorantx.kt.SesionActivity"
+        android:label="activity_sesion"
+        tools:layout="@layout/activity_sesion" />
 </navigation>

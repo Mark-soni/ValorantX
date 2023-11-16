@@ -1,9 +1,12 @@
 package com.example.valorantx.kt
 
 import android.content.Context
+import android.content.Intent
 import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.telecom.Call.Details
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI.setupWithNavController
@@ -25,12 +28,20 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        //splash
+        val screenSplash = installSplashScreen()
+
         // Inicio Bottom Navigation View
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.hostFragmentManager) as NavHostFragment
         navController = navHostFragment.navController
         val bottomNavigationView: BottomNavigationView = findViewById<BottomNavigationView>(R.id.top_menu)
         setupWithNavController(bottomNavigationView, navController)
 
+        //Splash
+        screenSplash.setKeepOnScreenCondition {true}
+        val intent = Intent(this, RedesActivity::class.java)
+        startActivity(intent)
+        finish()
     }
 
     //States
